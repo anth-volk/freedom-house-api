@@ -21,6 +21,7 @@ module.exports = (sequelize) => {
 	Entity.init({
 		entity_code: {
 			primaryKey: true,
+			unique: true,
 			type: DataTypes.STRING,
 			allowNull: false,
 		},	
