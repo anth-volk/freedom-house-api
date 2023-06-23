@@ -258,6 +258,11 @@ module.exports = {
 		{entity_code: 'VU', entity_name: 'Vanuatu'},
 		{entity_code: 'WF', entity_name: 'Wallis and Futuna'},
 		{entity_code: 'WS', entity_name: 'Samoa'},
+		{entity_code: 'YE', entity_name: 'Yemen'},
+		{entity_code: 'YT', entity_name: 'Mayotte'},
+		{entity_code: 'ZA', entity_name: 'South Africa'},
+		{entity_code: 'ZM', entity_name: 'Zambia'},
+		{entity_code: 'ZW', entity_name: 'Zimbabwe'},
 	])
   },
 
