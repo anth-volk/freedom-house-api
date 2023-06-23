@@ -252,5 +252,18 @@ export const entitiesList = [
 	{entity_code: 'ZA', entity_name: 'South Africa'},
 	{entity_code: 'ZM', entity_name: 'Zambia'},
 	{entity_code: 'ZW', entity_name: 'Zimbabwe'},
+	// Former country codes and names formerly used by Freedom House
+	{entity_code: 'BU', entity_name: 'Burma'},
+	{entity_code: 'CS', entity_name: 'Czechoslovakia'},
+	{entity_code: 'TP', entity_name: 'East Timor'},
+	{entity_code: 'DD', entity_name: 'German Democratic Republic'},
+	{entity_code: 'CS', entity_name: 'Serbia and Montenegro'},
+	{entity_code: 'SU', entity_name: 'USSR'},
+	{entity_code: 'YU', entity_name: 'Yugoslavia'},
+	{entity_code: 'ZR', entity_name: 'Zaire'},
+	// Former variants of names used by Freedom House, 
+	// given with more than two letters to distinguish from
+	// ISO-designated codes
+
 
 ]
