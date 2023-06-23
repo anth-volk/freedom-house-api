@@ -12,54 +12,35 @@ module.exports = (sequelize) => {
 		static associate(models) {
 			// define association here
 			this.belongsTo(models.Record, {
-				sourceKey: 'entity_code',
-				foreignKey: 'entity_code',
+				sourceKey: 'edition_id',
+				foreignKey: 'edition_id',
 				onDelete: 'cascade'
 			});
-			this.hasOne(models.Edition, {
+			this.belongsTo(models.Edition, {
 				foreignKey: 'start_edition_id',
 				sourceKey: 'edition_id',
 				onDelete: 'cascade'
 			});
-			this.hasOne(models.Edition, {
+			this.belongsTo(models.Edition, {
 				foreignKey: 'end_edition_id',
 				sourceKey: 'edition_id',
 				onDelete: 'cascade'
 			});
 		}
 	}
-	Entity.init({
-		entity_code: {
-			type: DataTypes.STRING,
+	Edition.init({
+		edition_id: {
+			primaryKey: true,
+			type: DataTypes.INTEGER,
 			allowNull: false,
 		},	
-		entity_name: {
+		edition_desc: {
 			type: DataTypes.STRING,
 			allowNull: false
 		},
-		entity_start_edition: {
-			type: DataTypes.INTEGER,
-			allowNull: false,
-			references: {
-				model: {
-					tableName: 'Edition'
-				},
-				key: 'edition_id'
-			}
-		},
-		entity_end_edition: {
-			type: DataTypes.INTEGER,
-			allowNull: false,
-			references: {
-				model: {
-					tableName: 'Edition'
-				},
-				key: 'edition_id'
-			}
-		}
 	}, {
 		sequelize,
-		modelName: 'Entity',
+		modelName: 'Edition',
 	});
-	return Entity;
+	return Edition;
 };
