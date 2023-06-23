@@ -3,7 +3,12 @@
 module.exports = {
 	async up(queryInterface, Sequelize) {
 		await queryInterface.createTable('RegionTypes', {
-			region_type: {
+			entity_type_id: {
+				primaryKey: true,
+				type: DataTypes.INTEGER,
+				allowNull: false
+			},
+			entity_type: {
 				type: DataTypes.STRING,
 				allowNull: false,
 			}

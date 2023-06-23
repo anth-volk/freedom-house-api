@@ -3,9 +3,9 @@
 module.exports = {
 	async up(queryInterface, Sequelize) {
 		await queryInterface.createTable('Regions', {
-			region_code: {
+			region_id: {
 				primaryKey: true,
-				type: DataTypes.STRING,
+				type: DataTypes.INTEGER,
 				allowNull: false,
 			},	
 			region_name: {

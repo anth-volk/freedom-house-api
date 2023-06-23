@@ -14,22 +14,22 @@ module.exports = {
 					key: 'entity_code'
 				}
 			},	
-			region_code: {
-				type: DataTypes.STRING,
+			region_id: {
+				type: DataTypes.INTEGER,
 				references: {
 					model: {
 						tableName: 'Region'
 					},
-					key: 'region_code'
+					key: 'region_id'
 				}
 			},
-			region_type: {
-				type: DataTypes.STRING,
+			entity_type_id: {
+				type: DataTypes.INTEGER,
 				references: {
 					model: {
-						tableName: 'RegionType'
+						tableName: 'EntityType'
 					},
-					key: 'region_type'
+					key: 'entity_type_id'
 				}
 			},
 			edition_id: {
