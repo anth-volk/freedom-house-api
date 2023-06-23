@@ -249,6 +249,15 @@ module.exports = {
 		{entity_code: 'US', entity_name: 'United States of America'},
 		{entity_code: 'UY', entity_name: 'Uruguay'},
 		{entity_code: 'UZ', entity_name: 'Uzbekistan'},
+		{entity_code: 'VA', entity_name: 'Holy See'},
+		{entity_code: 'VC', entity_name: 'Saint Vincent and the Grenadines'},
+		{entity_code: 'VE', entity_name: 'Venezuela (Bolivarian Republic of)'},
+		{entity_code: 'VG', entity_name: 'Virgin Islands (British)'},
+		{entity_code: 'VI', entity_name: 'Virgin Islands (U.S.)'},
+		{entity_code: 'VN', entity_name: 'Viet Nam'},
+		{entity_code: 'VU', entity_name: 'Vanuatu'},
+		{entity_code: 'WF', entity_name: 'Wallis and Futuna'},
+		{entity_code: 'WS', entity_name: 'Samoa'},
 	])
   },
 
