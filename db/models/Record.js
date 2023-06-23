@@ -26,6 +26,11 @@ module.exports = (sequelize) => {
 				foreignKey: 'region_type',
 				onDelete: 'cascade'
 			});
+			this.hasOne(models.Edition, {
+				sourceKey: 'edition_id',
+				foreignKey: 'edition_id',
+				onDelete: 'cascade'
+			});
 		}
 	}
 	Record.init({
@@ -58,9 +63,15 @@ module.exports = (sequelize) => {
 				key: 'region_type'
 			}
 		},
-		edition: {
-			type: DataTypes.STRING,
-			allowNull: false
+		edition_id: {
+			type: DataTypes.INTEGER,
+			allowNull: false,
+			references: {
+				model: {
+					tableName: 'Edition'
+				},
+				key: 'edition_id'
+			}
 		},
 		status: {
 			type: DataTypes.STRING,

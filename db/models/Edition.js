@@ -3,7 +3,7 @@
 const { Model, DataTypes } = require('sequelize');
 
 module.exports = (sequelize) => {
-	class Entity extends Model {
+	class Edition extends Model {
 		/**
 		 * Helper method for defining associations.
 		 * This method is not a part of Sequelize lifecycle.
@@ -37,7 +37,7 @@ module.exports = (sequelize) => {
 			type: DataTypes.STRING,
 			allowNull: false
 		},
-		start_edition_id: {
+		entity_start_edition: {
 			type: DataTypes.INTEGER,
 			allowNull: false,
 			references: {
@@ -47,7 +47,7 @@ module.exports = (sequelize) => {
 				key: 'edition_id'
 			}
 		},
-		end_edition_id: {
+		entity_end_edition: {
 			type: DataTypes.INTEGER,
 			allowNull: false,
 			references: {
