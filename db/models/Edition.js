@@ -38,6 +38,9 @@ module.exports = (sequelize) => {
 			type: DataTypes.STRING,
 			allowNull: false
 		},
+		period_under_review: {
+			type: DataTypes.STRING
+		}
 	}, {
 		sequelize,
 		modelName: 'Edition',

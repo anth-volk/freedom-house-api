@@ -11,6 +11,9 @@ module.exports = {
 			edition_desc: {
 				type: DataTypes.STRING,
 				allowNull: false
+			},
+			period_under_review: {
+				type: DataTypes.STRING
 			}
 		}, {
 			onDelete: 'cascade'
