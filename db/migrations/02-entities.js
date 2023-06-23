@@ -12,6 +12,26 @@ module.exports = {
 			entity_name: {
 				type: DataTypes.STRING,
 				allowNull: false
+			},
+			start_edition_id: {
+				type: DataTypes.INTEGER,
+				allowNull: false,
+				references: {
+					model: {
+						tableName: 'Edition'
+					},
+					key: 'edition_id'
+				}
+			},
+			end_edition_id: {
+				type: DataTypes.INTEGER,
+				allowNull: false,
+				references: {
+					model: {
+						tableName: 'Edition'
+					},
+					key: 'edition_id'
+				}
 			}
 		}, {
 			onDelete: 'cascade'

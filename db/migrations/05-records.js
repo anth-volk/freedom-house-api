@@ -32,9 +32,15 @@ module.exports = {
 					key: 'region_type'
 				}
 			},
-			edition: {
-				type: DataTypes.STRING,
-				allowNull: false
+			edition_id: {
+				type: DataTypes.INTEGER,
+				allowNull: false,
+				references: {
+					model: {
+						tableName: 'Edition'
+					},
+					key: 'edition_id'
+				}
 			},
 			status: {
 				type: DataTypes.STRING,
