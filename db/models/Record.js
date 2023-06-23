@@ -17,13 +17,13 @@ module.exports = (sequelize) => {
 				onDelete: 'cascade'
 			});
 			this.hasOne(models.Region, {
-				sourceKey: 'region_code',
-				foreignKey: 'region_code',
+				sourceKey: 'region_id',
+				foreignKey: 'region_id',
 				onDelete: 'cascade'
 			});
-			this.hasOne(models.RegionType, {
-				sourceKey: 'region_type',
-				foreignKey: 'region_type',
+			this.hasOne(models.EntityType, {
+				sourceKey: 'entity_type_id',
+				foreignKey: 'entity_type_id',
 				onDelete: 'cascade'
 			});
 			this.hasOne(models.Edition, {
@@ -45,22 +45,22 @@ module.exports = (sequelize) => {
 				key: 'entity_code'
 			}
 		},	
-		region_code: {
-			type: DataTypes.STRING,
+		entity_type_id: {
+			type: DataTypes.INTEGER,
+			references: {
+				model: {
+					tableName: 'EntityType'
+				},
+				key: 'entity_type_id'
+			}
+		},
+		region_id: {
+			type: DataTypes.INTEGER,
 			references: {
 				model: {
 					tableName: 'Region'
 				},
-				key: 'region_code'
-			}
-		},
-		region_type: {
-			type: DataTypes.STRING,
-			references: {
-				model: {
-					tableName: 'RegionType'
-				},
-				key: 'region_type'
+				key: 'region_id'
 			}
 		},
 		edition_id: {

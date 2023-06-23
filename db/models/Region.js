@@ -12,16 +12,16 @@ module.exports = (sequelize) => {
 		static associate(models) {
 			// define association here
 			this.belongsTo(models.Record, {
-				sourceKey: 'region_code',
-				foreignKey: 'region_code',
+				sourceKey: 'region_id',
+				foreignKey: 'region_id',
 				onDelete: 'cascade'
 			});
 		}
 	}
 	Region.init({
-		region_code: {
+		region_id: {
 			primaryKey: true,
-			type: DataTypes.STRING,
+			type: DataTypes.INTEGER,
 			allowNull: false,
 		},	
 		region_name: {

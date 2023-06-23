@@ -3,7 +3,7 @@
 const { Model, DataTypes } = require('sequelize');
 
 module.exports = (sequelize) => {
-	class RegionType extends Model {
+	class EntityType extends Model {
 		/**
 		 * Helper method for defining associations.
 		 * This method is not a part of Sequelize lifecycle.
@@ -12,14 +12,19 @@ module.exports = (sequelize) => {
 		static associate(models) {
 			// define association here
 			this.belongsTo(models.Record, {
-				sourceKey: 'region_type',
-				foreignKey: 'region_type',
+				sourceKey: 'entity_type_id',
+				foreignKey: 'entity_type_id',
 				onDelete: 'cascade'
 			});
 		}
 	}
 	RegionType.init({
-		region_type: {
+		entity_type_id: {
+			primaryKey: true,
+			type: DataTypes.INTEGER,
+			allowNull: false
+		},
+		entity_type: {
 			type: DataTypes.STRING,
 			allowNull: false,
 		}
