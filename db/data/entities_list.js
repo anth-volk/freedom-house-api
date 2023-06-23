@@ -1,4 +1,9 @@
 export const entitiesList = [
+	// Note that this list does not reflect former names
+	// for extant countries where the country merely changed
+	// names and maintained the same territory (e.g., Swaziland -> Eswatini)
+	// to allow for better long-term comparison
+
 	// 242 officially assigned ISO 3166-1 alpha-2 codes,
 	// altered to fit how Freedom House describes the entities
 	// and commenting out localities currently not included
@@ -121,7 +126,7 @@ export const entitiesList = [
 	{entity_code: 'KH', entity_name: 'Cambodia'},
 	{entity_code: 'KI', entity_name: 'Kiribati'},
 	{entity_code: 'KM', entity_name: 'Comoros'},
-	{entity_code: 'KN', entity_name: 'St. Kitts and Nevis'},
+	{entity_code: 'KN', entity_name: 'Saint Kitts and Nevis'},
 	{entity_code: 'KP', entity_name: 'North Korea'},
 	{entity_code: 'KR', entity_name: 'South Korea'},
 	{entity_code: 'KW', entity_name: 'Kuwait'},
@@ -129,7 +134,7 @@ export const entitiesList = [
 	{entity_code: 'KZ', entity_name: 'Kazakhstan'},
 	{entity_code: 'LA', entity_name: 'Laos'},
 	{entity_code: 'LB', entity_name: 'Lebanon'},
-	{entity_code: 'LC', entity_name: 'St. Lucia'},
+	{entity_code: 'LC', entity_name: 'Saint Lucia'},
 	{entity_code: 'LI', entity_name: 'Liechtenstein'},
 	{entity_code: 'LK', entity_name: 'Sri Lanka'},
 	{entity_code: 'LR', entity_name: 'Liberia'},
@@ -238,7 +243,7 @@ export const entitiesList = [
 	{entity_code: 'UY', entity_name: 'Uruguay'},
 	{entity_code: 'UZ', entity_name: 'Uzbekistan'},
 	// {entity_code: 'VA', entity_name: 'Holy See'},
-	{entity_code: 'VC', entity_name: 'St. Vincent and the Grenadines'},
+	{entity_code: 'VC', entity_name: 'Saint Vincent and the Grenadines'},
 	{entity_code: 'VE', entity_name: 'Venezuela'},
 	// {entity_code: 'VG', entity_name: 'Virgin Islands (British)'},
 	// {entity_code: 'VI', entity_name: 'Virgin Islands (U.S.)'},
@@ -256,11 +261,11 @@ export const entitiesList = [
 	// {entity_code: 'BUMM', entity_name: 'Burma'},
 	{entity_code: 'CSHH', entity_name: 'Czechoslovakia'},
 	// {entity_code: 'TPTL', entity_name: 'East Timor'},
-	{entity_code: 'DDDE', entity_name: 'Germany, E.'},
+	{entity_code: 'DDDE', entity_name: 'Germany, East'},
 	{entity_code: 'CSXX', entity_name: 'Serbia and Montenegro'},
 	{entity_code: 'SUHH', entity_name: 'USSR'},
-	{entity_code: 'VDVN', entity_name: 'Vietnam, N.'},
-	{entity_code: 'YDYE', entity_name: 'Yemen, S.'},
+	{entity_code: 'VDVN', entity_name: 'Vietnam, North'},
+	{entity_code: 'YDYE', entity_name: 'Yemen, South'},
 	{entity_code: 'YUCS', entity_name: 'Yugoslavia'},
 	// {entity_code: 'ZRCD', entity_name: 'Zaire'},
 	// Unilaterally imposed codes for partially recognized countries
@@ -270,7 +275,7 @@ export const entitiesList = [
 	{entity_code: 'XC', entity_name: 'Chechnya'},
 	{entity_code: 'XD', entity_name: 'Kurdistan'},
 	{entity_code: 'XE', entity_name: 'Eastern Donbas'},
-	{entity_code: 'XH', entity_name: 'Western Sahara'},
+	{entity_code: 'XH', entity_name: 'Western Papua'},
 	{entity_code: 'XI', entity_name: 'Indian Kashmir'},
 	{entity_code: 'XL', entity_name: 'Northern Ireland'},
 	{entity_code: 'XN', entity_name: 'Nagorno-Karabakh'},
@@ -285,13 +290,13 @@ export const entitiesList = [
 	// Former variants of names used by Freedom House, 
 	// given with more than two letters to distinguish from
 	// ISO-designated codes
-	{entity_code: 'DE_W', entity_name: 'Germany, W.'},
+	{entity_code: 'DE_W', entity_name: 'Germany, West'},
 	{entity_code: 'PS_G', entity_name: 'Gaza Strip'},
 	{entity_code: 'PS_I', entity_name: 'Israeli-Occupied Territories'},
 	{entity_code: 'PS_P', entity_name: 'Palestinian Authority-Administered Territories'},
 	{entity_code: 'PS_W', entity_name: 'West Bank'},
-	{entity_code: 'VN_S', entity_name: 'Vietnam, S.'},
-	{entity_code: 'YE_N', entity_name: 'Yemen, N.'},
-
-
+	{entity_code: 'VN_S', entity_name: 'Vietnam, South'},
+	{entity_code: 'YE_N', entity_name: 'Yemen, North'},
+	{entity_code: 'ZA_B', entity_name: 'South Africa, Black'},
+	{entity_code: 'ZA_W', entity_name: 'South Africa, White'}
 ]
