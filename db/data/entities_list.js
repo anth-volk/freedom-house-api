@@ -345,7 +345,7 @@ export const entitiesList = [
 	{entity_code: 'CSXX', current_name: 'Serbia and Montenegro', contemporary_name: 'Serbia and Montenegro', start_edition_id: 30, end_edition_id: 32},
 	{entity_code: 'DDDE', current_name: 'Germany, East', contemporary_name: 'Germany (East)', start_edition_id: 0, end_edition_id: 15},
 	{entity_code: 'DDDE', current_name: 'Germany, East', contemporary_name: 'Germany, East', start_edition_id: 16, end_edition_id: 16},
-	{entity_code: 'PZPA', current_name: 'Panama Canal Zone', contemporary_name: 'Panama Canal Zone', start_edition_id: 5},
+	{entity_code: 'PZPA', current_name: 'Panama Canal Zone', contemporary_name: 'Panama Canal Zone', start_edition_id: 5, end_edition_id: 6},
 	{entity_code: 'SUHH', current_name: 'U.S.S.R.', contemporary_name: 'U.S.S.R.', start_edition_id: 0, end_edition_id: 17},
 	{entity_code: 'VDVN', current_name: 'North Vietnam', contemporary_name: 'North Vietnam', start_edition_id: 0, end_edition_id: 3},
 	{entity_code: 'YDYE', current_name: 'Yemen, South', contemporary_name: 'Yemen (South)', start_edition_id: 0, end_edition_id: 15},
