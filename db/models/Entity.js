@@ -33,7 +33,11 @@ module.exports = (sequelize) => {
 			type: DataTypes.STRING,
 			allowNull: false,
 		},	
-		entity_name: {
+		contemporary_name: {
+			type: DataTypes.STRING,
+			allowNull: false
+		},
+		current_name: {
 			type: DataTypes.STRING,
 			allowNull: false
 		},

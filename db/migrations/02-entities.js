@@ -9,7 +9,11 @@ module.exports = {
 				primaryKey: true,
 				type: Sequelize.STRING
 			},
-			entity_name: {
+			contemporary_name: {
+				type: DataTypes.STRING,
+				allowNull: false
+			},
+			current_name: {
 				type: DataTypes.STRING,
 				allowNull: false
 			},
