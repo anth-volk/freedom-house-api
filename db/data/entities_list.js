@@ -216,7 +216,7 @@ export const entitiesList = [
 	{entity_code: 'NF', current_name: 'Norfolk Island', contemporary_name: 'Norfolk Island', start_edition_id: 5, end_edition_id: 26},
 	{entity_code: 'NG', current_name: 'Nigeria', contemporary_name: 'Nigeria', start_edition_id: 0},
 	{entity_code: 'NI', current_name: 'Nicaragua', contemporary_name: 'Nicaragua', start_edition_id: 0},
-	{entity_code: 'NL', current_name: 'Netherlands, contemporary_name: 'Netherlands', start_edition_id: 0},
+	{entity_code: 'NL', current_name: 'Netherlands', contemporary_name: 'Netherlands', start_edition_id: 0},
 	{entity_code: 'NO', current_name: 'Norway', contemporary_name: 'Norway', start_edition_id: 0},
 	{entity_code: 'NP', current_name: 'Nepal', contemporary_name: 'Nepal', start_edition_id: 0},
 	{entity_code: 'NR', current_name: 'Nauru', contemporary_name: 'Nauru', start_edition_id: 0},
@@ -337,12 +337,13 @@ export const entitiesList = [
 	{entity_code: 'ZW', current_name: 'Zimbabwe', contemporary_name: 'Rhodesia', start_edition_id: 5, end_edition_id: 6},
 	{entity_code: 'ZW', current_name: 'Zimbabwe', contemporary_name: 'Zimbabwe Rhodesia', start_edition_id: 7, end_edition_id: 7},
 	{entity_code: 'ZW', current_name: 'Zimbabwe', contemporary_name: 'Zimbabwe', start_edition_id: 8},
+
 	// Four-letter former country codes, in accordance with ISO 3166-3
-	{entity_code: 'ANHH', current_name: 'Netherlands Antilles,' contemporary_name: 'Netherlands Antilles', start_edition_id: 5, end_edition_id: 26},
-	{entity_code: 'CSHH', current_name: 'Czechoslovakia,' contemporary_name: 'Czechoslovakia', start_edition_id: 0, end_edition_id: 18},
-	{entity_code: 'CSHH', current_name: 'Czechoslovakia,' contemporary_name: 'Czecho-Slovakia', start_edition_id: 19, end_edition_id: 19},
-	{entity_code: 'CSXX', current_name: 'Serbia and Montenegro,' contemporary_name: 'Serbia and Montenegro', start_edition_id: 30, end_edition_id: 32},
-	{entity_code: 'DDDE', current_name: 'Germany, East,' contemporary_name: 'Germany (East)', start_edition_id: 0, end_edition_id: 15},
+	{entity_code: 'ANHH', current_name: 'Netherlands Antilles', contemporary_name: 'Netherlands Antilles', start_edition_id: 5, end_edition_id: 26},
+	{entity_code: 'CSHH', current_name: 'Czechoslovakia', contemporary_name: 'Czechoslovakia', start_edition_id: 0, end_edition_id: 18},
+	{entity_code: 'CSHH', current_name: 'Czechoslovakia', contemporary_name: 'Czecho-Slovakia', start_edition_id: 19, end_edition_id: 19},
+	{entity_code: 'CSXX', current_name: 'Serbia and Montenegro', contemporary_name: 'Serbia and Montenegro', start_edition_id: 30, end_edition_id: 32},
+	{entity_code: 'DDDE', current_name: 'Germany, East', contemporary_name: 'Germany (East)', start_edition_id: 0, end_edition_id: 15},
 	{entity_code: 'DDDE', current_name: 'Germany, East', contemporary_name: 'Germany, East', start_edition_id: 16, end_edition_id: 16},
 	{entity_code: 'PZPA', current_name: 'Panama Canal Zone', contemporary_name: 'Panama Canal Zone', start_edition_id: 5},
 	{entity_code: 'SUHH', current_name: 'U.S.S.R.', contemporary_name: 'U.S.S.R.', start_edition_id: 0, end_edition_id: 17},
@@ -351,8 +352,10 @@ export const entitiesList = [
 	{entity_code: 'YDYE', current_name: 'Yemen, South', contemporary_name: 'Yemen, South', start_edition_id: 16, end_edition_id: 16},
 	{entity_code: 'YUCS', current_name: 'Yugoslavia', contemporary_name: 'Yugoslavia', start_edition_id: 0, end_edition_id: 18},
 	{entity_code: 'YUCS', current_name: 'Yugoslavia', contemporary_name: 'Yugoslavia (Serbia and Montenegro)', start_edition_id: 19, end_edition_id: 29},
+
 	// Unilaterally imposed codes for partially recognized countries
 	{entity_code: 'XK', current_name: 'Kosovo', contemporary_name: 'Kosovo', start_edition_id: 19},
+
 	// Unassigned four-letter codes for territories not included in ISO 3166-1
 	{entity_code: 'XABK', current_name: 'Abkhazia', contemporary_name: 'Abkhazia', start_edition_id: 24},
 	{entity_code: 'XAZO', current_name: 'Azores', contemporary_name: 'Azores', start_edition_id: 5, end_edition_id: 26},
